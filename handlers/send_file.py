@@ -12,7 +12,7 @@ async def ReplyForward(message: Message, file_id: int):
     try:
         await message.reply_text(
             f"**Here is Sharable Link of this file:**\n"
-            f"https://telegram.me/{Config.BOT_USERNAME}?start=OmegaBots_{str_to_b64(str(file_id))}\n\n"
+            f"https://telegram.me/{Config.BOT_USERNAME}?start=KR_FILM_{str_to_b64(str(file_id))}\n\n"
             f"__To Retrive the Stored File, just open the link!__",
             disable_web_page_preview=True, quote=True)
     except FloodWait as e:
